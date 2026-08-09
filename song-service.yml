@@ -1,4 +1,3 @@
-# Centralized configuration for song-service, served by the Config Server.
 song:
   service:
-    test-config-message: "Welcome to the Song Service! Config was loaded from the centralized config repo."
+    test-config-message: "Config was loaded from the centralized config repo."

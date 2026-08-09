@@ -1,7 +1,3 @@
-# Centralized configuration for api-gateway, served by the Config Server.
-# Spring Cloud Gateway automatically re-reads this route list when
-# /actuator/refresh (or /actuator/gateway/refresh) is called, so route
-# changes here take effect without redeploying the gateway.
 spring:
   cloud:
     gateway:
@@ -14,3 +10,7 @@ spring:
           uri: lb://song-service
           predicates:
             - Path=/songs/**
+        - id: song-service-config-info
+          uri: lb://song-service
+          predicates:
+            - Path=/config-info

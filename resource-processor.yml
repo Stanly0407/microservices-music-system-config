@@ -1,4 +1,3 @@
-# Centralized configuration for resource-processor, served by the Config Server.
 spring:
   rabbitmq:
     host: "${RABBITMQ_HOST:localhost}"
