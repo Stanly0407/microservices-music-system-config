@@ -30,6 +30,6 @@ pushed to the `main` branch to be picked up.
 
 1. Edit a value in one of the `*.yml` files here (e.g. `song-service.yml`'s
    `song.service.welcome-message`) and push to `main`.
-2. Call `POST /actuator/refresh` on the running client service (e.g. `song-service`).
+2. Call `POST /actuator/busrefresh` on the running client service (e.g. `song-service`).
 3. Verify the new value is in effect (e.g. `GET /config-info` on song-service) — no restart
    required.
