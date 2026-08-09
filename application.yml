@@ -1,0 +1,10 @@
+# Shared configuration applied to every client of the Config Server.
+# Service-specific files (e.g. song-service.yml) override these values.
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,refresh
+  endpoint:
+    health:
+      show-details: when-authorized

@@ -1,0 +1,7 @@
+# Centralized configuration for eureka-server, served by the Config Server.
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
